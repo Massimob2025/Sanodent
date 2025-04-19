@@ -1,3 +1,4 @@
+/* === BASE RESET === */
 * {
     margin: 0;
     padding: 0;
@@ -5,119 +6,21 @@
 }
 
 body, html {
-    height: 100%;
     font-family: 'Segoe UI', sans-serif;
+    background-color: #fff;
+    color: #333;
 }
 
-/* MENU */
-.navbar {
-    background-color: #4a3e80;
-    padding: 15px 0;
-    text-align: center;
-    font-family: 'Segoe UI', sans-serif;
-}
-
-.navbar ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-}
-
-.navbar li {
-    display: inline;
-}
-
-.navbar a {
-    color: white;
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 1rem;
-    transition: color 0.3s ease;
-}
-
-.navbar a:hover {
-    color: #f3d55b;
-}
-
-/* HERO SPLIT */
-.hero-split {
-    display: flex;
-    height: 100vh;
-}
-
-.hero-left,
-.hero-right {
-    width: 50%;
-    position: relative;
-}
-
-.hero-left img,
-.hero-right img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.hero-text {
-    position: absolute;
-    top: 50%;
-    left: 10%;
-    transform: translateY(-50%);
-    color: white;
-    max-width: 80%;
-    z-index: 2;
-}
-
-.hero-text h1 {
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
-}
-
-.hero-text p {
-    font-size: 1.2rem;
-    margin-bottom: 1.5rem;
-}
-
-.btn {
-    background-color: #4a3e80;
-    color: white;
-    padding: 0.75rem 1.5rem;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-@media (max-width: 768px) {
-    .hero-split {
-        flex-direction: column;
-    }
-
-    .hero-left,
-    .hero-right {
-        width: 100%;
-        height: 50vh;
-    }
-
-    .hero-text {
-        position: static;
-        transform: none;
-        padding: 1rem;
-        background-color: rgba(0, 0, 0, 0.5);
-    }
-}
+/* === NAVBAR === */
 .navbar {
     background-color: #4a3e80;
     padding: 10px 0;
-    font-family: 'Segoe UI', sans-serif;
 }
 
 .nav-container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 30px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -130,9 +33,8 @@ body, html {
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 25px;
-    margin: 0;
-    padding: 0;
+    gap: 20px;
+    margin-left: 40px;
 }
 
 .nav-links li a {
@@ -147,11 +49,12 @@ body, html {
     color: #f3d55b;
 }
 
+/* === BANNER === */
 .main-banner img {
-    width: 100%;
+    width: 70%;
     height: auto;
     display: block;
-    margin: 0 auto;
+    margin: 20px auto;
 }
 
-
+ 
